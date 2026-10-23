@@ -15,6 +15,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <script src="install.js" defer></script>
 </head>
 <body>
   <main class="scene" aria-label="Contador romântico">
@@ -34,6 +35,12 @@
       <p class="countdown-caption">♡ o fim do período fértil da lobinha ♡</p>
     </section>
   </main>
+  <button class="install-button" id="install-button" type="button">♡ Adicionar à tela inicial</button>
+  <dialog id="install-help" class="install-help" aria-labelledby="install-title">
+    <h2 id="install-title">Adicionar à tela inicial</h2>
+    <p id="install-instructions"></p>
+    <form method="dialog"><button type="submit">Entendi</button></form>
+  </dialog>
 </body>
 </html>
 

@@ -4,7 +4,7 @@ html,body{margin:0;min-width:280px;min-height:100%}
 body{display:grid;place-items:center}
 .scene{position:relative;isolation:isolate;width:100%;height:100svh;min-height:720px;overflow:hidden;background:#36204e}
 .landscape{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 69%;z-index:-2}
-.scene::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(16,8,30,.38) 0%,rgba(16,8,30,.32) 48%,rgba(16,8,30,.12) 100%)}
+.scene::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(28,12,49,.68) 0%,rgba(32,14,55,.60) 48%,rgba(25,10,44,.44) 100%)}
 .countdown{position:absolute;top:16%;left:50%;transform:translateX(-50%);width:min(660px,68%);text-align:center;text-shadow:0 2px 8px #55265b}
 h1{margin:0 0 12px;font-size:28px;font-weight:400;letter-spacing:2px}
 .date{display:inline-flex;align-items:center;justify-content:center;gap:25px;padding:4px 20px;border:1.5px solid #cf84df;border-radius:40px;background:#87509d45;box-shadow:inset 0 0 18px #cc8bdf20;font-size:31px;letter-spacing:1px}
@@ -38,4 +38,12 @@ h1{margin:0 0 12px;font-size:28px;font-weight:400;letter-spacing:2px}
 
 @media(min-width:601px) and (max-width:1000px){.note-start,.note-side{top:4%;font-size:14px;line-height:1.35;letter-spacing:1px}.note-start{left:3%}.note-side{right:3%}.note-bottom{font-size:14px}}
 
+
+.install-button{position:fixed;bottom:max(18px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);z-index:5;max-width:92%;padding:11px 20px;border:1px solid #d995df;border-radius:28px;background:#342044e8;color:#ffe4ff;font:inherit;font-size:15px;cursor:pointer;box-shadow:0 3px 16px #13091e66}
+.install-button[hidden]{display:none}
+.install-help{width:min(440px,90vw);max-height:85svh;overflow:auto;padding:25px;border:1px solid #d995df;border-radius:20px;background:#302044;color:#ffe4ff;font-family:system-ui,sans-serif;line-height:1.6;box-shadow:0 15px 60px #0008}
+.install-help::backdrop{background:#100819bb}
+.install-help h2{font-size:21px;margin-top:0}
+.install-help button{padding:10px 22px;border:1px solid #d995df;border-radius:22px;background:#70427d;color:#fff;font:inherit;cursor:pointer}
+.install-button:focus-visible,.install-help button:focus-visible{outline:3px solid #ffe4ff;outline-offset:4px}
 
