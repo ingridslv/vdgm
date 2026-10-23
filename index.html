@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#302044">
+  <meta name="description" content="Contando cada segundo até 27 de outubro de 2026.">
+  <title>Contador de Horas</title>
+  <link rel="icon" href="assets/coracao.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="scene" aria-label="Contador romântico">
+    <picture>
+      <source media="(min-width: 601px)" srcset="assets/arte-desktop.png">
+      <img class="landscape" src="assets/arte-romantica.png" alt="Um lobinho escuro e uma loba clara abraçados, de olhos fechados, diante de um lago sob um céu roxo estrelado com lua rosa.">
+    </picture>
+    <section class="countdown" aria-labelledby="countdown-title">
+      <h1 id="countdown-title">Faltam para o dia</h1>
+      <div class="date"><span aria-hidden="true">♥</span><time datetime="2026-10-27T00:00:00-03:00">27/10/2026</time><span aria-hidden="true">♥</span></div>
+      <div class="units" role="timer" aria-label="Tempo restante até 27 de outubro de 2026" aria-live="off">
+        <div class="card"><span class="number" id="days"></span><span class="label">dias</span></div>
+        <div class="card"><span class="number" id="hours"></span><span class="label">horas</span></div>
+        <div class="card"><span class="number" id="minutes"></span><span class="label">minutos</span></div>
+        <div class="card"><span class="number" id="seconds"></span><span class="label">segundos</span></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
